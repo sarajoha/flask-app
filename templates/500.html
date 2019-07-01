@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title%}
+{{ super() }}
+  Bienvenido
+{% endblock %}
+
+{% block content %}
+  <h1>Ups, parece que algo no anda bien con el servidor :/</h1>
+  <p>{{ error }}</p>
+{% endblock %}
