@@ -1,7 +1,21 @@
-<nav>
+<!-- <nav>
   <ul>
     <li><img src="{{ url_for('static', filename='images/kitty2.jpg') }}" alt="Kitty image"></li>
     <li><a href="{{ url_for('index') }}">Ir a inicio</a></li>
     <li><a href="https://platzi.com" target="_blank">Ir a Platzi</a></li>
   </ul>
-</nav>
+</nav> -->
+
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='images/kitty2.jpg') }}" style="max-width: 48px" alt="Kitty image">
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('index') }}">Ir a inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://platzi.com" target="_blank">Ir a Platzi</a>
+  </li>
+</ul>
