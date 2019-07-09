@@ -12,6 +12,11 @@
       <img src="{{ url_for('static', filename='images/kitty2.jpg') }}" style="max-width: 48px" alt="Kitty image">
     </a>
   </li>
+  {% if current_user.is_authenticated %}
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ url_for('auth.logout') }}">Logout</a>
+  </li>
+  {% endif %}
   <li class="nav-item">
     <a class="nav-link active" href="{{ url_for('index') }}">Ir a inicio</a>
   </li>
